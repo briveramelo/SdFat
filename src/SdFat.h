@@ -1,3 +1,5 @@
+#include "main/globalMacros.h"
+#if SD_CARD == 1
 /**
  * Copyright (c) 2011-2020 Bill Greiman
  * This file is part of the SdFat library for SD memory cards.
@@ -498,3 +500,4 @@ class SdFile : public PrintFile<SdBaseFile> {
   }
 };
 #endif  // SdFat_h
+#endif

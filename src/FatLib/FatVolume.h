@@ -330,10 +330,10 @@ class FatVolume : public  FatPartition {
   }
 #endif  // ENABLE_ARDUINO_STRING
 
+  FatFile* vwd() {return &m_vwd;}
  private:
   friend FatFile;
   static FatVolume* cwv() {return m_cwv;}
-  FatFile* vwd() {return &m_vwd;}
   static FatVolume* m_cwv;
   FatFile m_vwd;
 };
