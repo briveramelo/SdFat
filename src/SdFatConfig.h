@@ -1,3 +1,5 @@
+#include "main/globalMacros.h"
+#if SD_CARD == 1
 /**
  * Copyright (c) 2011-2020 Bill Greiman
  * This file is part of the SdFat library for SD memory cards.
@@ -445,3 +447,4 @@ typedef uint8_t SdCsPin_t;
 #endif  // HAS_SDIO_CLASS
 
 #endif  // SdFatConfig_h
+#endif

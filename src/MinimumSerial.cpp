@@ -1,3 +1,5 @@
+#include "main/globalMacros.h"
+#if SD_CARD == 1
 /**
  * Copyright (c) 2011-2020 Bill Greiman
  * This file is part of the SdFat library for SD memory cards.
@@ -69,3 +71,4 @@ size_t MinimumSerial::write(uint8_t b) {
   return 1;
 }
 #endif  //  defined(UDR0) || defined(DOXYGEN)
+#endif

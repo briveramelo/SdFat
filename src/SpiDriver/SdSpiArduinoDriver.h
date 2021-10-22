@@ -32,6 +32,9 @@
 #if SPI_DRIVER_SELECT == 0 && SD_HAS_CUSTOM_SPI
 #define SD_USE_CUSTOM_SPI
 #endif  // SPI_DRIVER_SELECT == 0 && SD_HAS_CUSTOM_SPI
+
+using particle::__SPISettings;
+
 /**
  * \class SdSpiArduinoDriver
  * \brief Optimized SPI class for access to SD and SDHC flash memory cards.
@@ -78,12 +81,12 @@ class SdSpiArduinoDriver {
    * \param[in] maxSck Maximum SCK frequency.
    */
   void setSckSpeed(uint32_t maxSck) {
-    m_spiSettings = SPISettings(maxSck, MSBFIRST, SPI_MODE0);
+    m_spiSettings = __SPISettings(maxSck, MSBFIRST, SPI_MODE0);
   }
 
  private:
   SPIClass *m_spi;
-  SPISettings m_spiSettings;
+  __SPISettings m_spiSettings;
 };
 /** Typedef for use of SdSpiArduinoDriver */
 typedef SdSpiArduinoDriver SdSpiDriver;

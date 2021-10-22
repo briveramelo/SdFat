@@ -1,3 +1,5 @@
+#include "main/globalMacros.h"
+#if SD_CARD == 1
 /**
  * Copyright (c) 2011-2020 Bill Greiman
  * This file is part of the SdFat library for SD memory cards.
@@ -65,3 +67,4 @@ class MinimumSerial : public print_t {
   using print_t::write;
 };
 #endif  // MinimumSerial_h
+#endif

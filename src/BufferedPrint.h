@@ -1,3 +1,5 @@
+#include "main/globalMacros.h"
+#if SD_CARD == 1
 /**
  * Copyright (c) 2011-2020 Bill Greiman
  * This file is part of the SdFat library for SD memory cards.
@@ -267,3 +269,4 @@ class BufferedPrint {
   uint8_t m_buf[BUF_DIM < 24 ? 24 : BUF_DIM];  // NOLINT
 };
 #endif  // BufferedPrint_h
+#endif

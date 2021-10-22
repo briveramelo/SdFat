@@ -87,7 +87,7 @@ inline void SysCall::yield() {
 #elif defined(ARDUINO)
 inline void SysCall::yield() {
   // Use the external Arduino yield() function.
-  ::yield();
+  yield();
 }
 #else  // defined(PLATFORM_ID)
 inline void SysCall::yield() {}
