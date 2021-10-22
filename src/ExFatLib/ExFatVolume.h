@@ -327,10 +327,10 @@ class ExFatVolume : public ExFatPartition {
   }
 #endif  // ENABLE_ARDUINO_STRING
 
- private:
   friend ExFatFile;
-  static ExFatVolume* cwv() {return m_cwv;}
   ExFatFile* vwd() {return &m_vwd;}
+ private:
+  static ExFatVolume* cwv() {return m_cwv;}
   static ExFatVolume* m_cwv;
   ExFatFile m_vwd;
 };
