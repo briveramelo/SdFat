@@ -366,9 +366,12 @@ class FsVolume {
    */
 #endif  // ENABLE_ARDUINO_STRING
 
+  FatFile* vwd(){
+      return m_fVol ? (FatFile*)(m_fVol->vwd()) :
+             m_xVol ? (FatFile*)(m_xVol->vwd()) : (FatFile*)nullptr;
+  }
  protected:
   newalign_t   m_volMem[FS_ALIGN_DIM(ExFatVolume, FatVolume)];
-
  private:
   /** FsBaseFile allowed access to private members. */
   friend class FsBaseFile;

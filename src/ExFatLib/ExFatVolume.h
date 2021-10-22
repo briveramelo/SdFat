@@ -326,7 +326,6 @@ class ExFatVolume : public ExFatPartition {
     return truncate(path.c_str(), length);
   }
 #endif  // ENABLE_ARDUINO_STRING
-
   friend ExFatFile;
   ExFatFile* vwd() {return &m_vwd;}
  private:
