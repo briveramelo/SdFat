@@ -1,3 +1,5 @@
+#include "main/globalMacros.h"
+#if SD_CARD == 1
 #ifndef SdioTeensy_h
 #define SdioTeensy_h
 
@@ -275,3 +277,4 @@
 #define IOMUXC_SW_PAD_CTL_PAD_DSE_MASK  ((0x7)<<3)
 #endif  // defined(__IMXRT1062__)
 #endif  // SdioTeensy_h
+#endif

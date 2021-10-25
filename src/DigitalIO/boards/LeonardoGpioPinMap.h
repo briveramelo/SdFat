@@ -1,3 +1,5 @@
+#include "main/globalMacros.h"
+#if SD_CARD == 1
 #ifndef LeonardoGpioPinMap_h
 #define LeonardoGpioPinMap_h
 static const GpioPinMap_t GpioPinMap[] = {
@@ -33,3 +35,5 @@ static const GpioPinMap_t GpioPinMap[] = {
   GPIO_PIN(D, 6)   // D29
 };
 #endif  // LeonardoGpioPinMap_h
+
+#endif

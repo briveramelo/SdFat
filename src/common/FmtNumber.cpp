@@ -1,3 +1,5 @@
+#include "main/globalMacros.h"
+#if SD_CARD == 1
 /**
  * Copyright (c) 2011-2020 Bill Greiman
  * This file is part of the SdFat library for SD memory cards.
@@ -514,3 +516,4 @@ float scanFloat(const char* str, const char** ptr) {
  fail:
   return 0;
 }
+#endif

@@ -1,3 +1,5 @@
+#include "main/globalMacros.h"
+#if SD_CARD == 1
 /**
  * Copyright (c) 2011-2020 Bill Greiman
  * This file is part of the SdFat library for SD memory cards.
@@ -84,3 +86,4 @@ const uint8_t T_CREATE = 2;
 /** Set the file's write date and time */
 const uint8_t T_WRITE = 4;
 #endif  // FsApiConstants_h
+#endif

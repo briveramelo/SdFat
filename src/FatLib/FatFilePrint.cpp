@@ -1,3 +1,5 @@
+#include "main/globalMacros.h"
+#if SD_CARD == 1
 /**
  * Copyright (c) 2011-2020 Bill Greiman
  * This file is part of the SdFat library for SD memory cards.
@@ -156,3 +158,5 @@ size_t FatFile::printFileSize(print_t* pr) {
   }
   return pr->write(buf);
 }
+
+#endif

@@ -1,3 +1,5 @@
+#include "main/globalMacros.h"
+#if SD_CARD == 1
 /**
  * Copyright (c) 2011-2020 Bill Greiman
  * This file is part of the SdFat library for SD memory cards.
@@ -169,3 +171,5 @@ class obufstream : public ostream {
   size_t m_in = 0;
 };
 #endif  // bufstream_h
+
+#endif

@@ -1,3 +1,5 @@
+#include "main/globalMacros.h"
+#if SD_CARD == 1
 /**
  * Copyright (c) 2011-2020 Bill Greiman
  * This file is part of the SdFat library for SD memory cards.
@@ -91,3 +93,4 @@ class BlockDeviceInterface {
   virtual bool writeSectors(uint32_t sector, const uint8_t* src, size_t ns) = 0;
 };
 #endif  // BlockDeviceInterface_h
+#endif

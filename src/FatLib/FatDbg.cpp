@@ -1,3 +1,5 @@
+#include "main/globalMacros.h"
+#if SD_CARD == 1
 /**
  * Copyright (c) 2011-2020 Bill Greiman
  * This file is part of the SdFat library for SD memory cards.
@@ -217,3 +219,5 @@ void FatPartition::dmpFat(print_t* pr, uint32_t start, uint32_t count) {
   }
 }
 #endif  // DOXYGEN_SHOULD_SKIP_THIS
+
+#endif

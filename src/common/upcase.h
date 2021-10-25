@@ -1,3 +1,5 @@
+#include "main/globalMacros.h"
+#if SD_CARD == 1
 /**
  * Copyright (c) 2011-2020 Bill Greiman
  * This file is part of the SdFat library for SD memory cards.
@@ -28,3 +30,4 @@
 uint16_t toUpcase(uint16_t chr);
 uint32_t upcaseChecksum(uint16_t unicode, uint32_t checksum);
 #endif  // upcase_h
+#endif

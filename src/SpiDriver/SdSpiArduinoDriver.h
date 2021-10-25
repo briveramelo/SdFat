@@ -1,3 +1,5 @@
+#include "main/globalMacros.h"
+#if SD_CARD == 1
 /**
  * Copyright (c) 2011-2020 Bill Greiman
  * This file is part of the SdFat library for SD memory cards.
@@ -97,3 +99,5 @@ typedef SdSpiArduinoDriver SdSpiDriver;
 #include "SdSpiAvr.h"
 #endif  // __AVR__
 #endif  // SdSpiArduinoDriver_h
+
+#endif

@@ -1,3 +1,5 @@
+#include "main/globalMacros.h"
+#if SD_CARD == 1
 /**
  * Copyright (c) 2011-2020 Bill Greiman
  * This file is part of the SdFat library for SD memory cards.
@@ -107,3 +109,4 @@ namespace FsUtf {
                       const char* end, uint16_t* hs, uint16_t* ls);
 }  // namespace FsUtf
 #endif  // FsUtf_h
+#endif

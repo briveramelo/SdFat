@@ -1,3 +1,5 @@
+#include "main/globalMacros.h"
+#if SD_CARD == 1
 /* Arduino DigitalIO Library
  * Copyright (C) 2013 by William Greiman
  *
@@ -379,3 +381,4 @@ class DigitalPin {
 };
 #endif  // DigitalPin_h
 /** @} */
+#endif

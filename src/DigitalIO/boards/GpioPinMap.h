@@ -1,3 +1,5 @@
+#include "main/globalMacros.h"
+#if SD_CARD == 1
 /* Arduino DigitalIO Library
  * Copyright (C) 2013 by William Greiman
  *
@@ -62,3 +64,5 @@
 #error Unknown board type.
 #endif  // end all boards
 #endif  // GpioPinMap_h
+
+#endif

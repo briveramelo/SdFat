@@ -1,3 +1,5 @@
+#include "main/globalMacros.h"
+#if SD_CARD == 1
 #ifndef UnoGpioPinMap_h
 #define UnoGpioPinMap_h
 static const GpioPinMap_t GpioPinMap[] = {
@@ -23,3 +25,4 @@ static const GpioPinMap_t GpioPinMap[] = {
   GPIO_PIN(C, 5)   // D19
 };
 #endif  // UnoGpioPinMap_h
+#endif

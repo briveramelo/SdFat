@@ -1,3 +1,5 @@
+#include "main/globalMacros.h"
+#if SD_CARD == 1
 /**
  * Copyright (c) 2011-2020 Bill Greiman
  * This file is part of the SdFat library for SD memory cards.
@@ -72,3 +74,4 @@ constexpr uint8_t compileSecond() {
   return 10*(__TIME__[6] - '0') + __TIME__[7] - '0';
 }
 #endif  // CompileDateTime_h
+#endif

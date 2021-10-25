@@ -1,3 +1,5 @@
+#include "main/globalMacros.h"
+#if SD_CARD == 1
 /**
  * Copyright (c) 2011-2020 Bill Greiman
  * This file is part of the SdFat library for SD memory cards.
@@ -80,3 +82,5 @@ class SdCardFactory {
   SdSpiCard m_spiCard;
 };
 #endif  // SdCard_h
+
+#endif

@@ -1,3 +1,5 @@
+#include "main/globalMacros.h"
+#if SD_CARD == 1
 #ifndef Teensypp2GpioPinMap_h
 #define Teensypp2GpioPinMap_h
 static const GpioPinMap_t GpioPinMap[] = {
@@ -49,3 +51,5 @@ static const GpioPinMap_t GpioPinMap[] = {
   GPIO_PIN(F, 7),  // D45
 };
 #endif  // Teensypp2GpioPinMap_h
+
+#endif

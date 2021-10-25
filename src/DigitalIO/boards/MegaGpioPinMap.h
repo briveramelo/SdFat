@@ -1,3 +1,5 @@
+#include "main/globalMacros.h"
+#if SD_CARD == 1
 #ifndef MegaGpioPinMap_h
 #define MegaGpioPinMap_h
 static const GpioPinMap_t GpioPinMap[] = {
@@ -73,3 +75,5 @@ static const GpioPinMap_t GpioPinMap[] = {
   GPIO_PIN(K, 7)   // D69
 };
 #endif  // MegaGpioPinMap_h
+
+#endif

@@ -1,3 +1,5 @@
+#include "main/globalMacros.h"
+#if SD_CARD == 1
 /**
  * Copyright (c) 2011-2020 Bill Greiman
  * This file is part of the SdFat library for SD memory cards.
@@ -191,3 +193,4 @@ size_t fsPrintTime(print_t* pr, uint16_t time);
 size_t fsPrintTime(print_t* pr, uint16_t time, uint8_t sec100);
 size_t fsPrintTimeZone(print_t* pr, int8_t tz);
 #endif  // FsDateTime_h
+#endif

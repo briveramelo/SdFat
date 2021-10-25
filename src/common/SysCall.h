@@ -1,3 +1,5 @@
+#include "main/globalMacros.h"
+#if SD_CARD == 1
 /**
  * Copyright (c) 2011-2020 Bill Greiman
  * This file is part of the SdFat library for SD memory cards.
@@ -102,3 +104,4 @@ typedef PrintBasic stream_t;
 inline void SysCall::yield() {}
 #endif  // ENABLE_ARDUINO_FEATURES
 #endif  // SysCall_h
+#endif

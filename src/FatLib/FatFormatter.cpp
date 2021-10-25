@@ -1,3 +1,5 @@
+#include "main/globalMacros.h"
+#if SD_CARD == 1
 /**
  * Copyright (c) 2011-2020 Bill Greiman
  * This file is part of the SdFat library for SD memory cards.
@@ -278,3 +280,5 @@ bool FatFormatter::writeMbr() {
   setLe16(mbr->signature, MBR_SIGNATURE);
   return m_dev->writeSector(0, m_secBuf);
 }
+
+#endif

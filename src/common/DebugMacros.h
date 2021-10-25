@@ -1,3 +1,5 @@
+#include "main/globalMacros.h"
+#if SD_CARD == 1
 /**
  * Copyright (c) 2011-2020 Bill Greiman
  * This file is part of the SdFat library for SD memory cards.
@@ -72,3 +74,4 @@ __attribute__((unused)) static void dbgWarn(uint16_t line) {
 #define DBG_WARN_IF(b)
 #endif  // USE_DBG_MACROS > 1
 #endif  // DebugMacros_h
+#endif

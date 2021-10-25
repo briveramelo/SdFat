@@ -1,3 +1,5 @@
+#include "main/globalMacros.h"
+#if SD_CARD == 1
 /**
  * Copyright (c) 2011-2020 Bill Greiman
  * This file is part of the SdFat library for SD memory cards.
@@ -41,3 +43,4 @@ char* fmtHex(char* str, uint32_t n);
 char* fmtSigned(char* str, int32_t n, uint8_t base, bool caps);
 char* fmtUnsigned(char* str, uint32_t n, uint8_t base, bool caps);
 #endif  // FmtNumber_h
+#endif

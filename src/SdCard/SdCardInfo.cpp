@@ -1,3 +1,5 @@
+#include "main/globalMacros.h"
+#if SD_CARD == 1
 /**
  * Copyright (c) 2011-2020 Bill Greiman
  * This file is part of the SdFat library for SD memory cards.
@@ -43,3 +45,5 @@ void printSdErrorText(print_t* pr, uint8_t code) {
     default: pr->print(F("Unknown error"));
   }
 }
+
+#endif

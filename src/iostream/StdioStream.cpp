@@ -1,3 +1,5 @@
+#include "main/globalMacros.h"
+#if SD_CARD == 1
 /**
  * Copyright (c) 2011-2020 Bill Greiman
  * This file is part of the SdFat library for SD memory cards.
@@ -449,3 +451,5 @@ char* StdioStream::fmtSpace(uint8_t len) {
   m_w -= len;
   return reinterpret_cast<char*>(m_p);
 }
+
+#endif

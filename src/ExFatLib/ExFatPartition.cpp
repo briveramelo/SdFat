@@ -1,3 +1,5 @@
+#include "main/globalMacros.h"
+#if SD_CARD == 1
 /**
  * Copyright (c) 2011-2020 Bill Greiman
  * This file is part of the SdFat library for SD memory cards.
@@ -326,3 +328,5 @@ uint32_t ExFatPartition::rootLength() {
   uint32_t nc = chainSize(m_rootDirectoryCluster);
   return nc << bytesPerClusterShift();
 }
+
+#endif

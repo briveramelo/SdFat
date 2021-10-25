@@ -1,3 +1,5 @@
+#include "main/globalMacros.h"
+#if SD_CARD == 1
 /**
  * Copyright (c) 2011-2020 Bill Greiman
  * This file is part of the SdFat library for SD memory cards.
@@ -446,3 +448,5 @@ class ios : public ios_base {
   iostate m_iostate = 0;
 };
 #endif  // ios_h
+
+#endif

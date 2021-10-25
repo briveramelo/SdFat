@@ -1,3 +1,5 @@
+#include "main/globalMacros.h"
+#if SD_CARD == 1
 /**
  * Copyright (c) 2011-2020 Bill Greiman
  * This file is part of the SdFat library for SD memory cards.
@@ -62,3 +64,4 @@ void lbaToMbrChs(uint8_t* chs, uint32_t capacityMB, uint32_t lba) {
   chs[1] = ((c >> 2) & 0XC0) | s;
   chs[2] = c;
 }
+#endif

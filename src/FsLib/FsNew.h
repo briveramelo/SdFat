@@ -1,3 +1,5 @@
+#include "main/globalMacros.h"
+#if SD_CARD == 1
 /**
  * Copyright (c) 2011-2020 Bill Greiman
  * This file is part of the SdFat library for SD memory cards.
@@ -44,3 +46,5 @@ typedef uint32_t newalign_t;
 /** Custom new placement operator */
 void* operator new(size_t size, newalign_t* ptr);
 #endif  // FsNew_h
+
+#endif

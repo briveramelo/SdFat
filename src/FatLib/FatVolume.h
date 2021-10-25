@@ -1,3 +1,5 @@
+#include "main/globalMacros.h"
+#if SD_CARD == 1
 /**
  * Copyright (c) 2011-2020 Bill Greiman
  * This file is part of the SdFat library for SD memory cards.
@@ -338,3 +340,5 @@ class FatVolume : public  FatPartition {
   FatFile m_vwd;
 };
 #endif  // FatVolume_h
+
+#endif
