@@ -1,4 +1,4 @@
-#include "main/globalMacros.h"
+#include "main/GlobalMacros.h"
 #if SD_CARD == 1
 #ifndef Teensypp2GpioPinMap_h
 #define Teensypp2GpioPinMap_h

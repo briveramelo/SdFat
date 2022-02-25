@@ -1,4 +1,4 @@
-#include "main/globalMacros.h"
+#include "main/GlobalMacros.h"
 #if SD_CARD == 1
 #ifndef MegaGpioPinMap_h
 #define MegaGpioPinMap_h
