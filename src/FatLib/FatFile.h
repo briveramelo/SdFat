@@ -102,8 +102,7 @@ const uint8_t FNAME_FLAG_LOST_CHARS = 0X01;
 /** Base-name or extension has mixed case. */
 const uint8_t FNAME_FLAG_MIXED_CASE = 0X02;
 /** LFN entries are required for file name. */
-const uint8_t FNAME_FLAG_NEED_LFN =
-  FNAME_FLAG_LOST_CHARS | FNAME_FLAG_MIXED_CASE;
+#define FNAME_FLAG_NEED_LFN FNAME_FLAG_LOST_CHARS | FNAME_FLAG_MIXED_CASE
 /** Filename base-name is all lower case */
 const uint8_t FNAME_FLAG_LC_BASE = FAT_CASE_LC_BASE;
 /** Filename extension is all lower case. */

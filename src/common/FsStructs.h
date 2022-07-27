@@ -226,9 +226,9 @@ const uint8_t FAT_ATTRIB_DIRECTORY = 0x10;
 const uint8_t FAT_ATTRIB_ARCHIVE   = 0x20;
 const uint8_t FAT_ATTRIB_LONG_NAME = 0X0F;
 /** Filename base-name is all lower case */
-const uint8_t FAT_CASE_LC_BASE = 0X08;
+#define FAT_CASE_LC_BASE 0X08
 /** Filename extension is all lower case.*/
-const uint8_t FAT_CASE_LC_EXT = 0X10;
+#define FAT_CASE_LC_EXT 0X10
 
 typedef struct {
   uint8_t  name[11];
